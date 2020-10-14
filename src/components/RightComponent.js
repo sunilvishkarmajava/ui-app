@@ -43,7 +43,7 @@ const RightComponent =  ({RemoveArraykey,capitalizeFirstWord, allstateRight}) =>
 
 
   return (
-    <Paper square style={{'height':'850px'}}>
+    <Paper square style={{'height':'850px',borderRadius:"10px"}}>
       <FormControl component="fieldset" className={classes.formControl}>
       {showlabel.portugal && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Portugal</FormLabel>}
       {
@@ -96,6 +96,9 @@ const RightComponent =  ({RemoveArraykey,capitalizeFirstWord, allstateRight}) =>
         }
       )  
       }
+      {!showlabel.portugal && !showlabel.nicaragua && !showlabel.marshall_islands && <div style={{'marginTop':"50%"}}>
+        <h4 style={{color:"#57525273"}}>No Value Selected</h4>
+      </div>}
       </FormControl>
     </Paper>
   );

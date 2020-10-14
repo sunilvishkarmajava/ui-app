@@ -21,33 +21,33 @@ const LeftComponent = ({updateArray,capitalizeFirstWord, allstate}) =>{
   const classes = useStyles();
 
   return (
-    <Paper square style={{'height':'850px'}}>
+    <Paper square style={{'height':'850px',borderRadius:"10px"}}>
       <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Portugal</FormLabel>
+        <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px",fontWeight: "700",fontSize: "23px",color: "black",letterSpacing: "1px"}}>Portugal</FormLabel>
         <FormGroup>
             {
               Object.entries(allstate.portugal).map(([key,value],i) => <FormControlLabel
-              control={<Checkbox checked={value} onChange={(evt) => updateArray(evt, "portugal")} name={key} />}
+              control={<Checkbox checked={value} color="primary" onChange={(evt) => updateArray(evt, "portugal")} name={key} />}
               label={capitalizeFirstWord(key.replace(/_/g, " "))}
               key={i}
             />)  
             }
         </FormGroup>
-        <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Nicaragua</FormLabel>
+        <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px",fontWeight: "700",fontSize: "23px",color: "black",letterSpacing: "1px"}}>Nicaragua</FormLabel>
         <FormGroup>
             {
               Object.entries(allstate.nicaragua).map(([key,value],i) => <FormControlLabel
-              control={<Checkbox checked={value} onChange={(evt) => updateArray(evt, "nicaragua")} name={key} />}
+              control={<Checkbox checked={value} color="primary" onChange={(evt) => updateArray(evt, "nicaragua")} name={key} />}
               label={capitalizeFirstWord(key.replace(/_/g, " "))}
               key={i}
             />)  
             }
         </FormGroup>
-        <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Marshall islands</FormLabel>
+        <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px",fontWeight: "700",fontSize: "23px",color: "black",letterSpacing: "1px"}}>Marshall islands</FormLabel>
         <FormGroup>
             {
               Object.entries(allstate.marshall_islands).map(([key,value],i) => <FormControlLabel
-              control={<Checkbox checked={value} onChange={(evt) => updateArray(evt, "marshall_islands")} name={key} />}
+              control={<Checkbox checked={value} color="primary" onChange={(evt) => updateArray(evt, "marshall_islands")} name={key} />}
               label={capitalizeFirstWord(key.replace(/_/g, " "))}
               key={i}
             />)  
