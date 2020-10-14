@@ -45,7 +45,7 @@ const RightComponent =  ({RemoveArraykey,capitalizeFirstWord, allstateRight}) =>
   return (
     <Paper square style={{'height':'850px',borderRadius:"10px"}}>
       <FormControl component="fieldset" className={classes.formControl}>
-      {showlabel.portugal && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Portugal</FormLabel>}
+      {showlabel.portugal && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px",fontWeight: "700",fontSize: "23px",color: "black",letterSpacing: "1px"}}>Portugal</FormLabel>}
       {
         Object.entries(allstateRight.portugal).map(([key,value],i) => {
         return value ? (<div style={{borderRadius: '5px',marginTop:'10px',marginBottom:'10px'}} key={i}>
@@ -63,7 +63,7 @@ const RightComponent =  ({RemoveArraykey,capitalizeFirstWord, allstateRight}) =>
       </FormControl>
       <br/>
       <FormControl component="fieldset" className={classes.formControl}>
-      {showlabel.nicaragua && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Nicaragua</FormLabel>}
+      {showlabel.nicaragua && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px",fontWeight: "700",fontSize: "23px",color: "black",letterSpacing: "1px"}}>Nicaragua</FormLabel>}
       {
         Object.entries(allstateRight.nicaragua).map(([key,value],i) => {
         return value ? (<div style={{borderRadius: '5px',marginTop:'10px',marginBottom:'10px'}} key={i}>
@@ -81,7 +81,7 @@ const RightComponent =  ({RemoveArraykey,capitalizeFirstWord, allstateRight}) =>
       </FormControl>
       <br/>
       <FormControl component="fieldset" className={classes.formControl}>
-      {showlabel.marshall_islands && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px"}}>Marshall Islands</FormLabel>}
+      {showlabel.marshall_islands && <FormLabel component="legend" style={{textAlign:"left",paddingTop: "20px",paddingBottom: "20px",fontWeight: "700",fontSize: "23px",color: "black",letterSpacing: "1px"}}>Marshall Islands</FormLabel>}
       {
         Object.entries(allstateRight.marshall_islands).map(([key,value],i) => {
         return value ? (<div style={{borderRadius: '5px',marginTop:'10px',marginBottom:'10px'}} key={i}>
